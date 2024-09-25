@@ -62,7 +62,6 @@ function displayWeather(data) {
     const { current_weather } = data; // Ensure current_weather is available
     if (current_weather) {
         const temperatureC = current_weather.temperature; // Get temperature in Celsius
-        // const windSpeed = current_weather.wind_speed; // Access wind speed correctly
         const weatherCode = current_weather.weathercode; // Get weather code
 
         // Convert Celsius to Fahrenheit

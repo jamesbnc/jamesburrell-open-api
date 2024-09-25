@@ -5,6 +5,8 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f0f0f0;
+    background-image: linear-gradient(white, lightblue);
+    overflow: hidden; 
 }
 
 .container {
@@ -22,6 +24,14 @@ input {
     border-radius: 5px;
 }
 
+select {
+    font-size: large;
+}
+
+p {
+    font-size: large;
+}
+
 button {
     padding: 10px 15px;
     background-color: #007BFF;
@@ -29,6 +39,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: large;
 }
 
 button:hover {
@@ -37,4 +48,27 @@ button:hover {
 
 #weather-result {
     margin-top: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    body {
+        background-size: contain; /* Adjust for tablets and smaller screens */
+    }
+    .container {
+        max-width: 90%; /* Use more width on smaller screens */
+        margin: 30px auto; /* Adjust top margin */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px; /* Less padding on smaller screens */
+    }
+    h1 {
+        font-size: 1.5em; /* Smaller heading */
+    }
+    button {
+        width: 100%; /* Full-width buttons on small screens */
+    }
 }
